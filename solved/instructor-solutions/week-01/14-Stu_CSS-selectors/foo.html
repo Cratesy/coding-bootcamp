@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Element selector */
+      div {
+        background-color: black;
+        color: white;
+      }
+
+      /* Selectors list */
+      h1,
+      .sub-title {
+        color: red;
+      }
+
+      .list-item {
+        color: orange;
+      }
+
+      #main-article {
+        background-color: orange;
+      }
+
+      #hidden-item {
+        display: none;
+      }
+
+      * [lang^="en"] {
+        color: green;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-article">
+      <h1>Hello World</h1>
+      <h2 class="sub-title">Bye World</h2>
+    </div>
+
+    <div>
+      <ul>
+        <li id="hidden-item" class="list-item">One</li>
+        <li class="list-item" lang="en">Two</li>
+        <li class="list-item">Three</li>
+      </ul>
+    </div>
+  </body>
+</html>

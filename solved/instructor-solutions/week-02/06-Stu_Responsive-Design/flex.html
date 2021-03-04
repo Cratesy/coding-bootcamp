@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .flex-container {
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: column; */
+        /* height: 400px; */
+      }
+
+      .flex-item {
+        border: 1px solid red;
+        width: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        /* flex-grow: 1; */
+      }
+    </style>
+    <title>Flex</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item" style="height: 50px">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+    </div>
+  </body>
+</html>
